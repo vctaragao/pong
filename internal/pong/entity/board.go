@@ -70,3 +70,19 @@ func (b *Board) GetHeight() int {
 func (b *Board) GetWidth() int {
 	return b.width
 }
+
+func (b *Board) IsEdge(h int) bool {
+	if h == 1 || h == b.height-2 {
+		return true
+	}
+
+	return false
+}
+
+func (b *Board) IsGoal(w int) bool {
+	if w == 1 || w == b.width-1 {
+		return true
+	}
+
+	return false
+}

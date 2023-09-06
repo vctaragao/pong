@@ -73,7 +73,7 @@ func render(g *Game) {
 }
 
 func (g *Game) loop() {
-	gameTick := time.Second * 2
+	gameTick := time.Second / 2
 
 	for {
 		g.HandleBallMovement()

@@ -3,7 +3,7 @@ package entity
 type Direction int
 
 const (
-	Up = iota
+	Up Direction = iota
 	Down
 	Left
 	Right
@@ -14,3 +14,7 @@ const (
 	DownLeft
 	DownRight
 )
+
+func InitialDirection(i int) Direction {
+	return []Direction{UpLeft, UpRight, DownRight, DownLeft}[i]
+}
