@@ -1,5 +1,7 @@
 package entity
 
+const BallRune rune = '*'
+
 type Ball struct {
 	Direction
 	Position
@@ -22,6 +24,16 @@ func (b *Ball) Move() {
 		b.MoveDown()
 	case Left:
 		b.MoveLeft()
+	case Right:
+		b.MoveRight()
+	case UpRight:
+		b.MoveUpRight()
+	case UpLeft:
+		b.MoveUpLeft()
+	case DownLeft:
+		b.MoveDownLeft()
+	case DownRight:
+		b.MoveDownRight()
 	}
 }
 
@@ -50,6 +62,11 @@ func (b *Ball) MoveDownRight() {
 	b.H++
 	b.W++
 }
-func (b *Ball) MoveUp() {
-	b.H--
+
+func (b *Ball) MoveLeft() {
+	b.W--
+}
+
+func (b *Ball) MoveRight() {
+	b.W++
 }

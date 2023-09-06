@@ -1,13 +1,17 @@
 package handler
 
-import "github.com/vctaragao/pong/internal/pong/entity"
+import (
+	"github.com/vctaragao/pong/internal/pong/entity"
+	"log"
+)
 
 type MovementHandler struct {
-	board *entity.Board
+	board  *entity.Board
+	logger *log.Logger
 }
 
-func NewMovementHandler(board *entity.Board) MovementHandler {
-	return MovementHandler{board: board}
+func NewMovementHandler(board *entity.Board, logger *log.Logger) MovementHandler {
+	return MovementHandler{board: board, logger: logger}
 }
 
 func (h *MovementHandler) StartMomevementPlayerHandlers(b *entity.Board, players []*entity.Player) []entity.PlayerChannel {
@@ -29,7 +33,6 @@ func (h *MovementHandler) handlerPlayerMovement(b *entity.Board, p *entity.Playe
 		case entity.MovDown:
 			h.MoveDown(p)
 		default:
-			return
 		}
 	}
 }

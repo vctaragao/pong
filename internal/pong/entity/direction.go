@@ -6,11 +6,11 @@ const (
 	Up = iota
 	Down
 	Left
-	Rigth
+	Right
 
 	UpLeft
 	UpRight
 
 	DownLeft
-	DownRigth
+	DownRight
 )

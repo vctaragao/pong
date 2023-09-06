@@ -31,7 +31,9 @@ type (
 
 func NewPlayer(id, h, w int, up, down rune) Player {
 	return Player{
+		ID: id,
 		Position: Position{
+
 			H: h,
 			W: w,
 		},

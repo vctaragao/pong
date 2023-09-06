@@ -1,27 +1,31 @@
 package pong
 
 import (
+	"log"
+	"time"
+
 	"github.com/vctaragao/pong/internal/pong/entity"
 	"github.com/vctaragao/pong/internal/pong/handler"
 	"golang.org/x/exp/slices"
 )
 
 type BoardRenderFunc func(b *entity.Board)
-type KeyboardHandlerFunc func(playerChannels []entity.PlayerChannel)
+type KeyboardHandlerFunc func(playerChannels []entity.PlayerChannel, logger *log.Logger)
 
 type Game struct {
 	entity.Board
 	handler.MovementHandler
 	handler.BallMovementHandler
+	logger          *log.Logger
 	Players         []*entity.Player
 	Ball            entity.Ball
 	render          BoardRenderFunc
 	keyboardHandler KeyboardHandlerFunc
 }
 
-func NewGame(render BoardRenderFunc, keyBoardHandler KeyboardHandlerFunc) Game {
+func NewGame(render BoardRenderFunc, keyBoardHandler KeyboardHandlerFunc, logger *log.Logger) Game {
 	board := entity.NewBoard(Height, Width)
-	movementHandler := handler.NewMovementHandler(&board)
+	movementHandler := handler.NewMovementHandler(&board, logger)
 
 	ball := entity.NewBall(Height/2, Width/2)
 	ballMovementHandler := handler.NewBallMovementHandler(&board, &ball)
@@ -29,6 +33,7 @@ func NewGame(render BoardRenderFunc, keyBoardHandler KeyboardHandlerFunc) Game {
 	g := Game{
 		Ball:                ball,
 		Board:               board,
+		logger:              logger,
 		render:              render,
 		MovementHandler:     movementHandler,
 		keyboardHandler:     keyBoardHandler,
@@ -53,11 +58,25 @@ func (g *Game) AddPlayer(p *entity.Player) {
 
 func (g *Game) Start() {
 	playerChannels := g.StartMomevementPlayerHandlers(&g.Board, g.Players)
-	go g.keyboardHandler(playerChannels)
+	go g.keyboardHandler(playerChannels, g.logger)
+	go render(g)
 	go g.loop()
 }
 
+func render(g *Game) {
+	fps := time.Second / time.Duration(FPS)
+
+	for {
+		g.render(&g.Board)
+		time.Sleep(fps)
+	}
+}
+
 func (g *Game) loop() {
-	g.HandleBallMovement()
-	g.render(&g.Board)
+	gameTick := time.Second * 2
+
+	for {
+		g.HandleBallMovement()
+		time.Sleep(gameTick)
+	}
 }

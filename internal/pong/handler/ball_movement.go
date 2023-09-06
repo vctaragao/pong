@@ -12,6 +12,7 @@ func NewBallMovementHandler(board *entity.Board, ball *entity.Ball) BallMovement
 }
 
 func (h *BallMovementHandler) HandleBallMovement() {
-	direction := h.ball.Direction
-
+	// check colision
+	h.ball.Move()
+	h.board.SetCell(h.ball.H, h.ball.W, entity.BallRune)
 }
