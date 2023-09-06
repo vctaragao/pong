@@ -1,47 +1,340 @@
-Buffer size: 0
-Key received: {0 119 <nil>}
-Buffer size: 0
-
-Buffer size: 0
-Key received: {0 119 <nil>}
-Buffer size: 0
-
-Buffer size: 0
-Key received: {0 119 <nil>}
-Buffer size: 0
-
-Buffer size: 0
-Key received: {0 115 <nil>}
-Buffer size: 0
-
-Buffer size: 0
-Key received: {0 115 <nil>}
-Buffer size: 0
-
-Buffer size: 0
-Key received: {0 115 <nil>}
-Buffer size: 0
-
-Buffer size: 0
-Key received: {0 115 <nil>}
-Buffer size: 0
-
-Buffer size: 0
-Key received: {0 115 <nil>}
-Buffer size: 0
-
-Buffer size: 0
-Key received: {0 119 <nil>}
-Buffer size: 0
-
-Buffer size: 0
-Key received: {0 119 <nil>}
-Buffer size: 0
-
-Buffer size: 0
-Key received: {3 0 <nil>}
-Buffer size: 0
-
-
-
-Buffer size: 0
+Key read: w
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: w
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: w
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: w
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: s
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: s
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: s
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: s
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: s
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: s
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: s
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: s
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: s
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: s
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: w
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: w
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: w
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: w
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: w
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: w
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: w
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: w
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: s
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: s
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: s
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: w
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: s
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: w
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: k
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: j
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
+Key read: s
+player Channels: [0xc0000c0000 0xc0000c0070]
+Writting to channel
+Writting to channel
