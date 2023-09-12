@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"os"
 	"os/signal"
@@ -17,20 +16,19 @@ func main() {
 	signals := make(chan os.Signal, 1)
 	signal.Notify(signals, os.Interrupt, syscall.SIGTERM)
 
+	game := pong.NewGame(render, keyboardHandler, initLog())
+	game.Start()
+
+	<-signals
+}
+
+func initLog() *log.Logger {
 	logFile, err := os.Create("log.txt")
 	if err != nil {
 		panic(err)
 	}
 
-	l := log.New(logFile, "", log.LstdFlags)
-
-	fmt.Fprintf(logFile, "Dest: %v\n", l.Writer())
-	l.Printf("test")
-
-	game := pong.NewGame(render, keyboardHandler, l)
-	game.Start()
-
-	<-signals
+	return log.New(logFile, "", log.LstdFlags)
 }
 
 func render(board *entity.Board) {
@@ -46,7 +44,6 @@ func keyboardHandler(playerChannels []entity.PlayerChannel, logger *log.Logger) 
 		log.Fatal(err)
 	}
 	defer func() {
-		logger.Println("Deffer")
 		t.Close()
 	}()
 

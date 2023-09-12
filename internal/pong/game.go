@@ -28,7 +28,7 @@ func NewGame(render BoardRenderFunc, keyBoardHandler KeyboardHandlerFunc, logger
 	movementHandler := handler.NewMovementHandler(&board, logger)
 
 	ball := entity.NewBall(Height/2, Width/2)
-	ballMovementHandler := handler.NewBallMovementHandler(&board, &ball)
+	ballMovementHandler := handler.NewBallMovementHandler(&board, &ball, logger)
 
 	g := Game{
 		Ball:                ball,
@@ -73,7 +73,7 @@ func render(g *Game) {
 }
 
 func (g *Game) loop() {
-	gameTick := time.Second / 2
+	gameTick := time.Second / 3
 
 	for {
 		g.HandleBallMovement()

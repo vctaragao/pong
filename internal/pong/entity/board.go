@@ -80,9 +80,13 @@ func (b *Board) IsEdge(h int) bool {
 }
 
 func (b *Board) IsGoal(w int) bool {
-	if w == 1 || w == b.width-1 {
+	if w == 1 || w == b.width-2 {
 		return true
 	}
 
 	return false
+}
+
+func (b *Board) GetCell(h, w int) rune {
+	return b.Field[h][w]
 }

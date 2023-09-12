@@ -1,7 +1,5 @@
 package entity
 
-import "golang.org/x/exp/rand"
-
 const BallRune rune = '*'
 
 type Ball struct {
@@ -15,7 +13,7 @@ func NewBall(h, w int) Ball {
 			H: h,
 			W: w,
 		},
-		Direction: InitialDirection(rand.Intn(4)),
+		Direction: Right,
 	}
 }
 
@@ -79,21 +77,41 @@ func (b *Ball) MoveRight() {
 	b.W++
 }
 
-func (b *Ball) ChangeDirection() {
+func (b *Ball) ChangeDirection(wall Wall) {
+	var newDirection Direction
+
 	switch b.Direction {
 	case Up:
-		b.SetDirection(Down)
+		newDirection = Down
 	case Down:
-		b.SetDirection(Up)
+		newDirection = Up
 	case UpRight:
-		b.SetDirection(DownRight)
+		if wall == Vertical {
+			newDirection = UpLeft
+		} else {
+			newDirection = DownRight
+		}
 	case UpLeft:
-		b.SetDirection(DownLeft)
+		if wall == Vertical {
+			newDirection = UpRight
+		} else {
+			newDirection = DownLeft
+		}
 	case DownLeft:
-		b.SetDirection(UpLeft)
+		if wall == Vertical {
+			newDirection = DownRight
+		} else {
+			newDirection = UpLeft
+		}
 	case DownRight:
-		b.SetDirection(UpRight)
+		if wall == Vertical {
+			newDirection = DownLeft
+		} else {
+			newDirection = UpRight
+		}
 	}
+
+	b.SetDirection(newDirection)
 }
 
 func (b *Ball) SetDirection(d Direction) {
