@@ -1,5 +1,9 @@
 package entity
 
+import (
+	"math/rand"
+)
+
 const BallRune rune = '*'
 
 type Ball struct {
@@ -13,7 +17,7 @@ func NewBall(h, w int) Ball {
 			H: h,
 			W: w,
 		},
-		Direction: Right,
+		Direction: InitialDirection(rand.Intn(4)),
 	}
 }
 

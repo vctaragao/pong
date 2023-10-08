@@ -6,10 +6,10 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/inancgumus/screen"
 	"github.com/mattn/go-tty"
 	"github.com/vctaragao/pong/internal/pong"
 	"github.com/vctaragao/pong/internal/pong/entity"
+	"github.com/vctaragao/pong/pkg/terminal"
 )
 
 func main() {
@@ -32,8 +32,8 @@ func initLog() *log.Logger {
 }
 
 func render(board *entity.Board) {
-	screen.Clear()
-	screen.MoveTopLeft()
+	terminal.ClearFull()
+	terminal.MoveTopLeft()
 
 	board.Print()
 }
